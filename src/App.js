@@ -1,25 +1,25 @@
 import './App.css';
-import NavigationB from './components/Navbar/NavigationB';
-import Jumbo from './components/Jumbotron/Jumbo';
-import Mealspec from './components/MealPlanForm/Mealspec';
-import Footer from './components/Footer/Footer';
-import CaloricForm from './components/CaloricIntakeForm/CaloricForm'
+import NavigationBar from './NavigationBar';
+import Jumbo from './Jumbo';
+import MainPageMealForm from './MainPageMealForm';
+import Footer from './Footer';
+import CaloricIntakeForm from './CaloricIntakeForm'
 
 function App() {
   return (
   <> 
     <div>
       <div className="NavBar">      
-        <NavigationB/>
+        <NavigationBar/>
       </div>   
       <div>
         <Jumbo/> 
       </div>
       <div>
-        <Mealspec/>
+        <MainPageMealForm/>
       </div>
       <div>
-        <CaloricForm/>
+        <CaloricIntakeForm/>
       </div>
       <div className="Footer">        
         <Footer/>
@@ -28,5 +28,4 @@ function App() {
   </>
   );
 }
-
 export default App;

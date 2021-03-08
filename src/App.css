@@ -1,6 +1,6 @@
 /*/////////////////////////MAIN WEB PAGE*/
 .App > div{
-  background-image:url('./Images/background-food.png');
+  background-image:url('./Images/HD.jpg');
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,11 +9,44 @@
   min-height:100%;
   width:100%;
 }
+/*///////////////Navbar*/
 .NavBar {
   position:relative;
   position:sticky;
   top:0;
 }
+.signup {
+  color: whitesmoke;
+  font-size:0.8em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  #fire {
+    animation: move-fire infinite 5s linear;
+  }
+}
+#navbarText {
+    font-size: 25px;
+}  
+@keyframes move-fire {
+  0% {
+    transform: rotate(0deg);
+    color: rgb(5, 131, 156);
+  }
+  25% {
+    transform: rotate(10deg);    
+    color:rgba(39, 97, 190, 0.83);
+
+  }
+  75% {
+    transform: rotate(-5deg);
+    color:rgba(39, 97, 190, 0.83);
+  }
+  100% {
+    transform: rotate(0deg);
+    color: rgba(39, 97, 190, 0.83);
+  }
+}
+/*/////////////Footer*/
 .Footer {
   position:relative;
   bottom: 0;
@@ -22,6 +55,26 @@
   height: 15px;
   text-align: center;
   background-color: #343a40;
+  color: white;
+  font-size: 10px;
+}
+/*///////////////Main page jumbo*/
+#h1Jumbo {
+  max-width:1500px;
+  margin: 30px auto;
+  background: #343a40e1;
+  text-align:left;
+  padding:40px;
+  border-radius:10px;
+  text-align:center;
+}
+#h1Jumbo h1, h2{
+  color:#ffffff;
+  font-weight:bold;
+}
+#h1Jumbo , h3 {
+  color:#ffffff;
+  font-weight:lighter;
 }
 /*////////////////////////////MAIN PAGE FORM*/
 .MealForm { 
