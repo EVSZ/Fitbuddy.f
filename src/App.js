@@ -7,8 +7,8 @@ import CaloricForm from './components/CaloricIntakeForm/CaloricForm'
 
 function App() {
   return (
-  <>     
-    <div className="Main">      
+  <> 
+    <div>
       <div className="NavBar">      
         <NavigationB/>
       </div>   
@@ -23,8 +23,8 @@ function App() {
       </div>
       <div className="Footer">        
         <Footer/>
-      </div>   
-    </div>   
+      </div>    
+    </div>
   </>
   );
 }
