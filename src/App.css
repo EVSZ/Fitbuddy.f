@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:column;  
+  height:100%;
+  width:100%;
+}
+
+.Main > div {
+
+}
+
+body > div {
+  background-image:url('./Images/HD.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y:hidden;
+  width:100%;
+  height:100%;
+}
+.NavBar {
+  position:relative;
+  position:sticky;
+  top:0;
+}
+
+.Footer {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+
+  background-color: #343a40;
+}
+
+/*FORMS AND SHIT*/
+.MealForm { 
+  max-width:600px;
+  margin: 30px auto;
+  background: #3c465afa;
+  padding:40px;
+  border-radius:10px;
+}
+
+.MealFormEl {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 200px;
+}
+.MealFormEl div  {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.MealFormEl .MealFormGrL > label {
+  position:relative;
+  text-align: right;
+  padding: 0 10px 0;
+  width:134px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MealFormEl .MealFormGrC {
+  width:235px;
+  margin-right:15px;
+
+}
+.MealFormElImages {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+.MealFormElImages > div {
+  max-width: 100px;
+  padding:10px;
+}
+
+.MealForm input[type="number"]::placeholder {
+text-align:right;
+}
+.MealFormElImages .dietTypeFG label{
+  font-size:0.6em;
+  display:flex;
+  justify-content: center;
+}
+.imgBtn{
+  background: orange;
+}
+label {
+  color: #aaa;
+  margin: 12px 0 15px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  justify-content:left;
 }

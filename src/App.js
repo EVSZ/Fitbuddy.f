@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import NavigationB from './components/Navbar/NavigationB';
+import Jumbo from './components/Jumbotron/Jumbo';
+import Mealspec from './components/MealPlanForm/Mealspec';
+import Footer from './components/Footer/Footer';
+import CaloricForm from './components/CaloricIntakeForm/CaloricForm'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>     
+    <div className="Main">      
+      <div className="NavBar">      
+        <NavigationB/>
+      </div>   
+      <div>
+        <Jumbo/> 
+      </div>
+      <div>
+        <Mealspec/>
+      </div>
+      <div>
+        <CaloricForm/>
+      </div>
+      <div className="Footer">        
+        <Footer/>
+      </div>   
+    </div>   
+  </>
   );
 }
 

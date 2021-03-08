@@ -1,0 +1,19 @@
+#h1Jumbo {
+    max-width:1500px;
+    margin: 30px auto;
+    background: #343a40e1;
+    text-align:left;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+}
+
+#h1Jumbo h1, h2{
+    color:#ffffff;
+    font-weight:bold;
+}
+
+#h1Jumbo , h3 {
+    color:#ffffff;
+    font-weight:lighter;
+}
