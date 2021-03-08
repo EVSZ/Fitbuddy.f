@@ -1,3 +1,4 @@
+/*/////////////////////////MAIN WEB PAGE*/
 .Main {
   position: relative;
   display: flex;
@@ -5,11 +6,9 @@
   height:100%;
   width:100%;
 }
-
 .Main > div {
 
 }
-
 body > div {
   background-image:url('./Images/HD.jpg');
   background-size:cover;
@@ -24,7 +23,6 @@ body > div {
   position:sticky;
   top:0;
 }
-
 .Footer {
   position:relative;
   bottom: 0;
@@ -32,11 +30,9 @@ body > div {
   width: 100%;
   height: 15px;
   text-align: center;
-
   background-color: #343a40;
 }
-
-/*FORMS AND SHIT*/
+/*////////////////////////////MAIN PAGE FORM*/
 .MealForm { 
   max-width:600px;
   margin: 30px auto;
@@ -44,7 +40,6 @@ body > div {
   padding:40px;
   border-radius:10px;
 }
-
 .MealFormEl {
   display: flex;
   flex-direction: row;
@@ -56,19 +51,7 @@ body > div {
   flex-direction: row;
   justify-content: center;
 }
-
-.MealFormEl .MealFormGrL > label {
-  position:relative;
-  text-align: right;
-  padding: 0 10px 0;
-  width:134px;
-}
-
-.MealFormEl .MealFormGrC {
-  width:235px;
-  margin-right:15px;
-
-}
+/*///////////////Images on form*/
 .MealFormElImages {
   display:flex;
   flex-direction:row;
@@ -77,26 +60,41 @@ body > div {
 }
 .MealFormElImages > div {
   max-width: 100px;
-  padding:10px;
+  padding:16px;
 }
-
-.MealForm input[type="number"]::placeholder {
-text-align:right;
+/*////////////////Input on form*/
+.MealFormEl .MealFormGrC {
+  width:250px;
+  margin-right:15px;
 }
-.MealFormElImages .dietTypeFG label{
-  font-size:0.6em;
-  display:flex;
-  justify-content: center;
+.MealForm input[type="number"] {
+text-align:left;
+height:45px;
 }
-.imgBtn{
-  background: orange;
+.MealForm .MealFormEl .MealFormGrC .longAppend {
+  width:130px;
+  }
+/*////////////////Labels on Form*/
+.MealForm .MealFormEl .MealFormGrC .calcBtn{
+/*Make calc button not show outline when clicked*/
+outline:0;
 }
 label {
   color: #aaa;
-  margin: 12px 0 15px;
-  font-size: 0.8em;
+  margin: 13px 0 0px;
+  font-size: .9em;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  justify-content:left;
+}
+.MealFormEl .MealFormGrL label {
+  position:relative;
+  text-align: right;
+  padding: 0 10px 0;
+  width:150px;
+}
+.MealFormElImages .dietTypeFG label{
+  font-size:0.7em;
+  display:flex;
+  justify-content: center;
 }
