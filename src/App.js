@@ -8,8 +8,7 @@ import CaloricIntakeForm from './CaloricIntakeForm'
 function App() {
   return (
   <> 
-    <div>
-      <div className="NavBar">      
+      <div>      
         <NavigationBar/>
       </div>   
       <div>
@@ -24,7 +23,6 @@ function App() {
       <div className="Footer">        
         <Footer/>
       </div>    
-    </div>
   </>
   );
 }
