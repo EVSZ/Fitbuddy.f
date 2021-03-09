@@ -4,7 +4,6 @@
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  position:scroll;
   max-height:100rem + 100px;
   min-height:100%;
   width:100%;
@@ -20,18 +19,16 @@
   justify-content: center;
   max-width: 100%;
   height:100px;
-  margin:5px;
 }
 .NavBar .navL {
   font-size: 30px;
-  text-decoration-color: aqua;
 }
 .NavBtn {
-  width:100px;
+  width:200px;
   height:50px;
 }
 .NavImg {
-  left:10px;
+  width:200px;
 }
 .signup {
   color: whitesmoke;
@@ -78,7 +75,7 @@
 }
 /*///////////////Main page jumbo*/
 #h1Jumbo {
-  max-width:1500px;
+  max-width:1200px;
   margin: 30px auto;
   background: #343a40e1;
   text-align:left;
