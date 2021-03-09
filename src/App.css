@@ -11,14 +11,24 @@
 }
 
 /*///////////////Navbar*/
-.NavBar {
-  position: absolute;
+.NavBar > div {
+  position: relative;
   display:flex;
+  flex:1;
   flex-direction: row;
-  height:60px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height:100px;
+  margin:5px;
 }
-.NavBar  div {
-
+.NavBar .navL {
+  font-size: 30px;
+  text-decoration-color: aqua;
+}
+.NavBtn {
+  width:100px;
+  height:50px;
 }
 .NavImg {
   left:10px;

@@ -3,6 +3,7 @@ import{ Navbar, Nav, Form, Button}  from 'react-bootstrap';
 
 const NavigationBar = () => {
   return ( 
+    <>
     <Navbar className="NavBar" bg="dark" variant="dark">
       <div>
       <Navbar.Brand href="#home">
@@ -11,17 +12,18 @@ const NavigationBar = () => {
       </Navbar.Brand>      
       </div>
       <div>
-        <Nav className="mr-auto" id="navbarText">
-        <Nav.Link href="#features">Products</Nav.Link>
-        <Nav.Link href="#pricing">Personal</Nav.Link>
-      </Nav>
+        <Nav id="navbarText">
+          <Nav.Link className="navL" href="#features">Products</Nav.Link>
+          <Nav.Link className="navL" href="#pricing">Personal</Nav.Link>
+        </Nav>
       </div>
       <div>
         <Form inline>
-        <Button variant="outline-info">Login</Button>
-      </Form>
+          <Button className="NavBtn" variant="outline-info">Login</Button>
+        </Form>
       </div>
     </Navbar>
+    </>
    );
 }
 export default NavigationBar;
