@@ -3,7 +3,7 @@ import { Jumbotron } from 'react-bootstrap';
 
 const Jumbo = () => {
     return (             
-        <Jumbotron  id="h1Jumbo">                
+        <Jumbotron id="h1Jumbo">                
             <h3>Having a difficult time with planning a diet?</h3>
             <h3>In the mood to explore new recipes?</h3>
             <h3>Want to get fit?</h3>
